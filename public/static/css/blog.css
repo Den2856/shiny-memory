@@ -1,0 +1,508 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Light.otf");
+  src: url("../fonts/Gilroy-ExtraBold.otf");
+  src: url("../fonts/gilroy-medium.ttf");
+}
+
+*{
+  font-family: 'Gilroy';
+}
+
+
+body{
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  background-color: #111;
+  font-family: 'Gilroy';
+}
+
+.home_top_bg{
+  position: relative;
+}
+
+.bg-1{
+  position: absolute;
+  inset: 0 0 0 0;
+  width: 100%;
+  height: 1300px;
+}
+
+.top{
+  width: 100%;
+  height: 118px;
+  position: fixed;
+  inset: 0px 0px 0px 0px;
+  z-index: 2;
+  transition: all 0.3s 0.02s ease;
+}
+
+.top.fix{
+  background-color: #070606;
+  height: 50px;
+}
+
+.wrap{
+  width: 1216px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 118px;
+  transition: all 0.3s 0.02s ease;
+  padding: 0 24px;
+}
+
+.logo{
+  width: 176px;
+  min-width: 176px;
+}
+
+.logo img{
+  vertical-align: bottom;
+  transition: all 0.3s 0.02s ease;
+  filter: invert(1);
+}
+
+.main-nav > ul {
+  display: flex;
+  list-style: none;
+  color: #656565;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav > ul > li {
+  position: relative;
+  padding: 6px 0;
+  margin: 0 0 0 32px;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.main-nav > ul > li > ul{
+  display: block;
+  box-sizing: border-box;
+  min-width: 134px;
+  max-width: 134px;
+  height: 100px;
+  padding: 15px 12px 15px 21px;
+  position: absolute;
+  inset: 48px -0px 0px 45px;
+  z-index: 1;
+  background: #0d0d0d;
+  border: 1px solid #202020;
+  border-radius: 4px;
+  opacity: 1;
+  visibility: visible;
+  transition: all .3s ease-in-out;
+}
+
+.main-nav > ul > li > ul::before{
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #0d0d0d;
+  border: #202020;
+  border-right: 0;
+  border-bottom: 0;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  position: absolute;
+  inset: -8px 0px 0px 100px;
+}
+
+.main-nav > ul > li > ul > li{
+  display: block;
+  padding: 8px 0px;
+  line-height: 22px;
+}
+
+.links{
+  padding: 0 18px 0 0;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Gilroy';
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.links:hover{
+  color: #7bda00;
+  transition: all 0.3s 0.02s ease;
+}
+
+.links::after{
+  color: #fff;
+  transition: all 0.3s 0.02s ease;
+}
+
+.sub-links{
+  padding: 0 18px 0 0;
+  display: block;
+  color: #656565;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Gilroy';
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.sub-links:hover{
+  color: #fff;
+  transition: all 0.3s 0.02s ease;
+}
+
+.sub-links::after{
+  color: #fff;
+  transition: all 0.3s 0.02s ease;
+}
+
+.home_top{
+  position: relative;
+  max-width: 780px;
+  height: 297px;
+  padding: 72px 0 0 0;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  inset: 0 0 0 24px;
+}
+
+.home_top_t{
+  padding: 60px 0 32px 0;
+  font-weight: 600;
+  line-height: 77px;
+  font-family: "Gilroy";
+  margin: 0;
+  color: #fff !important;
+  font-size: 48px;
+}
+
+.watch{
+  font-size: 24px;
+  color: #7bda00;
+}
+
+.home_top_e{
+  padding: 0 0 12px 0;
+}
+
+.videos{
+  padding: 0 0 24px;
+}
+
+.tabs{
+  position: relative;
+  width: 1216px;
+  height: 557px;
+  inset: -10px 0 0 0px;
+}
+
+.ui-tabs{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  position: relative;
+  padding: 0 0 0 32px;
+  border-bottom: 2px solid #656565;
+}
+
+.change-audio{
+  text-decoration: none;
+  display: block;
+  padding: 0 12px 0 0;
+  white-space: nowrap;
+}
+
+.change-audio a{
+  color: #fff;
+  display: block;
+  padding: 24px 14px;
+  position: relative;
+  text-decoration: none;
+  transition: all .3s .02s ease;
+  font-weight: 600;
+}
+
+.rating-block {
+  background: #121212;
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating-score {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.score-circle {
+  display: inline-block;
+  border: 3px solid #7bda00;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-family: "Roboto" sans-serif;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.stars .star {
+  color: #7bda00;
+  font-size: 20px;
+  cursor: pointer;
+}
+.stars .star.inactive {
+  color: #555;
+}
+
+.votes-count {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: color 0.3s, background 0.3s;
+}
+
+.btn .icon {
+  font-size: 16px;
+  color: #7bda00;
+}
+
+.btn.next-series {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn.next-series:hover {
+  color: #7bda00;
+}
+
+.btn.series-list:hover{
+  color: #7bda00;
+}
+
+#active{
+  color: #7bda00;
+  border-bottom: #7bda00;
+}
+
+
+.seasons-container {
+  margin-top: 25px;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+
+.seasons-container h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #7bda00;
+}
+
+.season-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.season-navigation span {
+  cursor: pointer;
+  color: #aaa;
+  transition: color 0.3s ease;
+  padding: 0px 16px 24px;
+}
+
+.season-navigation .active{
+  border-bottom: 3px solid #7bda00;
+  color: #7bda00;
+  
+}
+.season-navigation span:hover {
+  color: #7bda00;
+  transition: 0.2 all ease-out;
+}
+
+.episodes-grid.active {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 33px 0px 20px 0;
+}
+
+.episodes-grid{
+  display: none;
+}
+
+.episode-card {
+  background-color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.episode-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.episode-card h3,
+.episode-card p {
+  margin: 10px;
+  color: #fff;
+}
+
+.episode-card p {
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.episode-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+}
+
+
+.movie-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  color: #fff;
+  background-color: #070606;
+  padding: 40px 20px;
+  position: relative;
+  inset: 1000px 0 0 0;
+}
+
+.poster img {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+  width: 700px;
+  
+}
+
+.info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info li {
+  margin-bottom: 10px;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.info strong {
+  color: #bdbdbd;
+}
+
+.footer {
+  background-color: #070606;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+  inset: 1000px 0 0 0;
+  border-top: 1px solid #333;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+p{
+  margin: 0 0 12px 0;
+  font-family: 'Gilroy';
+  font-weight: 200 !important;
+}
+
+h2{
+  position: relative;
+  font-size: 32px;
+  line-height: 42px;
+  inset: 0 0 0 24px;
+  color: #fff;
+  margin: 0 0 12px;
+}
+
+a{
+  cursor: pointer;
+}
+
+span{
+  color: #7bda00;
+}
